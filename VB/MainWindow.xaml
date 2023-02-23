@@ -1,25 +1,14 @@
-<dx:DXWindow 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
-    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
-    xmlns:dxprg="http://schemas.devexpress.com/winfx/2008/xaml/propertygrid" 
-    dx:ThemeManager.ThemeName="Office2013"
+<Window 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+    xmlns:dxprg="http://schemas.devexpress.com/winfx/2008/xaml/propertygrid"
     x:Class="DXSample.MainWindow"
-    x:Name="win" 
-    Title="MainWindow" 
-    Height="600" 
-    Width="525">
+    Title="MainWindow" Height="600" Width="525">
     <Window.Resources>
         <DataTemplate x:Key="ImageTemplate">
-            <dxprg:PropertyDefinition Path="Photo" AllowExpanding="Never">
-                <dxprg:PropertyDefinition.CellTemplate>
-                    <DataTemplate>
-                        <dxe:ImageEdit Name="PART_Editor"/>
-                    </DataTemplate>
-                </dxprg:PropertyDefinition.CellTemplate>
-            </dxprg:PropertyDefinition>
+            <dxe:ImageEdit Name="PART_Editor"/>
         </DataTemplate>
     </Window.Resources>
     <dxprg:PropertyGridControl SelectedObject="{Binding Path=.}" ExpandCategoriesWhenSelectedObjectChanged="True"/>
-</dx:DXWindow>
+</Window>
