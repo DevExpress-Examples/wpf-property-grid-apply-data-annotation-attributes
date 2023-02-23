@@ -1,10 +1,11 @@
-﻿using System.IO;
+﻿using DevExpress.Mvvm.DataAnnotations;
 using System.ComponentModel.DataAnnotations;
-using DevExpress.Xpf.Core;
-using DevExpress.Mvvm.DataAnnotations;
+using System.Windows;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace DXSample {
-    public partial class MainWindow : DXWindow {
+    public partial class MainWindow : Window {
         public MainWindow() {
             var contact = new Contact {
                 FirstName = "Carolyn",
@@ -15,16 +16,10 @@ namespace DXSample {
                 City = "Whitinsville",
                 State = "MA",
                 Zip = "01582",
+                Photo = new BitmapImage(new System.Uri("pack://application:,,,/Images/CarolynBaker.jpg"))
             };
-            contact.Photo = GetPhoto(contact);
             DataContext = contact;
             InitializeComponent();
-        }
-        byte[] GetPhoto(Contact contact) {
-            return GetPhoto(contact.FirstName + contact.LastName + ".jpg");
-        }
-        byte[] GetPhoto(string name) {
-            return File.ReadAllBytes(@"Images\" + name);
         }
     }
     public class Contact {
@@ -58,7 +53,7 @@ namespace DXSample {
 
         [Display(GroupName = "Address")]
         [DisplayFormat(NullDisplayText = "<empty>")]
-        [RegExMaskAttribute(Mask = @"\w{1,25}", UseAsDisplayFormat = true, ShowPlaceHolders = false)]
+        [RegExMask(Mask = @"\w{1,25}", UseAsDisplayFormat = true, ShowPlaceHolders = false)]
         public string City { get; set; }
 
         [Display(GroupName = "Address")]
@@ -72,7 +67,7 @@ namespace DXSample {
 
         [Display(GroupName = "General Info")]
         [PropertyGridEditor(TemplateKey = "ImageTemplate")]
-        public byte[] Photo { get; set; }
+        public ImageSource Photo { get; set; }
     }
     public class ContactValidator {
         public static ValidationResult ValidateString(object value) {
