@@ -3,16 +3,20 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T323108)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WPF Property Grid - Apply Data Annotation Attributes
+
+The [Property Grid](https://docs.devexpress.com/WPF/15640/controls-and-libraries/property-grid) recognizes data annotation attributes from the [System.ComponentModel.DataAnnotations](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations) and [DevExpress.Mvvm.DataAnnotations](https://docs.devexpress.com/CoreLibraries/DevExpress.Mvvm.DataAnnotations) namespaces. This example demonstrates how to use attributes to group properties into [categories](https://docs.devexpress.com/WPF/117082/controls-and-libraries/property-grid/property-categories), implement validation, and specify a custom editor.
+
+![image](https://user-images.githubusercontent.com/65009440/220931646-ab4d784b-3b27-4ab2-b74a-2296a99849df.png)
+
+## Files to Review
 
 * [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
 * [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MainWindow.xaml.vb))
-<!-- default file list end -->
-# How to: Configure the Way Properties Are Displayed and Edited at the Data Model Level
 
+## Documentation
 
-<p>The DXPropertyGrid supports a large number of attributes from the <strong>System.ComponentModel.DataAnnotations</strong> library as well DevExpress attributes (see <a href="https://documentation.devexpress.com/#WPF/CustomDocument16863">Data Annotation Attributes</a> for more information), and you can use them to control the way properties are displayed.</p>
-<p>In this example, we used several attributes including the <strong>PropertyGridEditorAttribute</strong>, which allows you to specify a particular editor for a property in the PropertyGridControl.<br></p>
-
-<br/>
+* [Property Attributes](https://docs.devexpress.com/WPF/15623/controls-and-libraries/property-grid/property-attributes)
+* [Data Annotation Attributes](https://docs.devexpress.com/WPF/16863/mvvm-framework/data-annotation-attributes)
+* [Property Definitions](https://docs.devexpress.com/WPF/15521/controls-and-libraries/property-grid/property-definitions)
