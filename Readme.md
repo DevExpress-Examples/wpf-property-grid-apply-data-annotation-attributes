@@ -20,3 +20,7 @@ The [Property Grid](https://docs.devexpress.com/WPF/15640/controls-and-libraries
 * [Property Attributes](https://docs.devexpress.com/WPF/15623/controls-and-libraries/property-grid/property-attributes)
 * [Data Annotation Attributes](https://docs.devexpress.com/WPF/16863/mvvm-framework/data-annotation-attributes)
 * [Property Definitions](https://docs.devexpress.com/WPF/15521/controls-and-libraries/property-grid/property-definitions)
+
+## More Examples
+
+* [WPF Property Grid - Use the PropertyGridEditor Attribute to Define a Property Editor](https://github.com/DevExpress-Examples/wpf-property-grid-use-data-annotations-to-define-property-editor)
