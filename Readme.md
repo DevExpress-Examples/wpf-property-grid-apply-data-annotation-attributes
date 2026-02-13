@@ -17,7 +17,7 @@ The DXPropertyGrid supports a large number of attributes from the `System.Compon
 In this example, we used several attributes including the `PropertyGridEditorAttribute`, which allows you to specify a particular editor for a property in the PropertyGridControl.
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-property-grid-apply-data-annotation-attributes&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-property-grid-apply-data-annotation-attributes&~~~was_helpful=no)
 
